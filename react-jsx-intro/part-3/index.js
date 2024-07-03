@@ -12,7 +12,7 @@ const App = () => {
           {'person.index': index},
         <section className="people people_list" key={index}>
           <Person
-            name={person.name}
+            name={person.name.substring(0, 6)}
             age={person.age}
             hobbies={person.hobbies}
             index ={index}
